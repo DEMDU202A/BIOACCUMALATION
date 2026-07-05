@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bioaccumulation in the Sea</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(to bottom, #00BFFF, #1E90FF);
+      color: white;
+      text-align: center;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    /* Dark mode */
+    body.dark {
+      background: linear-gradient(to bottom, #0a0a0a, #1c1c1c);
+      color: #f0f0f0;
+    }
+
+    /* Dynamic Island header */
+    .dynamic-island {
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 40px;
+      padding: 15px 40px;
+      color: #FFD700;
+      font-size: 1.5em;
+      font-weight: bold;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      display: inline-block;
+    }
+
+    /* Liquid glass effect */
+    .glass-box, .beauty-box {
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 800px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #FFD700;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 1.2em;
+      color: #FFD700;
+    }
+
+    /* Buttons */
+    .toggle-btn, .donate-btn, .tour-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #FFD700;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .toggle-btn:hover, .donate-btn:hover, .tour-btn:hover {
+      background: #ffcc33;
+    }
+
+    /* Side image ads */
+    .ad-left, .ad-right {
+      position: fixed;
+      top: 120px;
+      width: 160px;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .ad-left { left: 10px; }
+    .ad-right { right: 10px; }
+    .ad-left img, .ad-right img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dynamic-island">🌊 Bioaccumulation in the Sea 🐟</div>
+
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+
+  <div class="glass-box">
+    <h2>What is Bioaccumulation?</h2>
+    <p>When harmful chemicals enter the ocean, <span class="highlight">small fish</span> absorb them. 
+    Then <span class="highlight">bigger fish</span> eat the small ones, collecting more toxins. 
+    Finally, <span class="highlight">top predators</span> like tuna or sharks carry the highest levels. 
+    And when humans eat seafood, those same toxins enter our bodies.</p>
+
+    <p>This process is called <span class="highlight">bioaccumulation</span>. 
+    It shows how pollution doesn’t just stay in the water — it climbs the food chain and affects all of us.</p>
+
+    <!-- Donate button -->
+    <button class="donate-btn" onclick="window.open('https://www.worldwildlife.org/donate', '_blank')">
+      🐠 Donate to Protect Fish
+    </button>
+  </div>
+
+  <!-- Beauty of the Sea section -->
+  <div class="beauty-box">
+    <h2>The Beauty of the Sea 🌊✨</h2>
+    <p>The sea is more than just water. It is a <span class="highlight">world of life</span> — colorful fish, playful dolphins, giant whales, and coral reefs that shine like underwater gardens.</p>
+
+    <p>It gives us food, fresh air, and peace. Standing by the shore, listening to the waves, feels like the ocean is speaking to us, reminding us how big and beautiful nature really is.</p>
+
+    <p>The sea connects countries, cultures, and people. It is a gift we should always admire and protect.</p>
+
+    <!-- Sea tour link -->
+    <button class="tour-btn" onclick="window.open('https://www.walkerstours.com', '_blank')">
+      🌍 Explore a Sea Tour in Sri Lanka
+    </button>
+  </div>
+
+  <footer>Protecting the sea means protecting ourselves 💙</footer>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Side advertisements with images -->
+  <div class="ad-left">
+    <a href="https://www.worldwildlife.org/species/fish" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Clown_fish.png" alt="Save Fish Ad">
+    </a>
+  </div>
+  <div class="ad-right">
+    <a href="https://oceana.org/ocean-fishes/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Blue_tang_fish.png" alt="Protect Marine Life Ad">
+    </a>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
